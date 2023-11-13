@@ -32,7 +32,8 @@
 
   .navbar-logo > img {
 
-    height: 110px; /*55px*/
+    height: 110px;
+    width: 110px;
 
   }
   
