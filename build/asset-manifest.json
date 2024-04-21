@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.4ba91985.css",
-    "main.js": "./static/js/main.903dda5c.js",
+    "main.css": "./static/css/main.305e0661.css",
+    "main.js": "./static/js/main.8508279f.js",
     "static/media/Maori Engagemen.jpg": "./static/media/Maori Engagemen.c6fae1748a579131ce2c.jpg",
     "static/media/Dual Side T-shirt Artwork Mockup.png": "./static/media/Dual Side T-shirt Artwork Mockup.b37b8b318a822b7f1b33.png",
     "static/media/maori-carving-2-1423369.jpg": "./static/media/maori-carving-2-1423369.77688c0c05fd4864a493.jpg",
@@ -26,6 +26,7 @@
     "static/media/Te Tiriti O Waitangi - Portion.jpg": "./static/media/Te Tiriti O Waitangi - Portion.6714468027f8fed0db71.jpg",
     "static/media/img-9.jpg": "./static/media/img-9.f97f588f3670715d01b2.jpg",
     "static/media/Witi McMath.jpg": "./static/media/Witi McMath.691a544f53707d93b3c8.jpg",
+    "static/media/Moana Jackson.jpg": "./static/media/Moana Jackson.2c3f4bf1eb41a557d5a3.jpg",
     "static/media/Saana Waitta-Murray.jpg": "./static/media/Saana Waitta-Murray.5c81cbc1205405b62c08.jpg",
     "static/media/John Hippolite.jpg": "./static/media/John Hippolite.315a231ea60fe8a6f7c2.jpg",
     "static/media/Expected Outcomes.jpg": "./static/media/Expected Outcomes.7b2a5ae7e6335fde404a.jpg",
@@ -39,11 +40,11 @@
     "static/media/2nd Column Thumbail Image.jpg": "./static/media/2nd Column Thumbail Image.c5499463c6d47d6e9a90.jpg",
     "static/media/payment.png": "./static/media/payment.b4523ef470fab0966fcf.png",
     "index.html": "./index.html",
-    "main.4ba91985.css.map": "./static/css/main.4ba91985.css.map",
-    "main.903dda5c.js.map": "./static/js/main.903dda5c.js.map"
+    "main.305e0661.css.map": "./static/css/main.305e0661.css.map",
+    "main.8508279f.js.map": "./static/js/main.8508279f.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ba91985.css",
-    "static/js/main.903dda5c.js"
+    "static/css/main.305e0661.css",
+    "static/js/main.8508279f.js"
   ]
 }
