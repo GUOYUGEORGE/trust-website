@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.917a9076.css",
-    "main.js": "./static/js/main.b196820a.js",
+    "main.css": "./static/css/main.78823a1e.css",
+    "main.js": "./static/js/main.9d530899.js",
     "static/media/Maori Engagemen.jpg": "./static/media/Maori Engagemen.c6fae1748a579131ce2c.jpg",
     "static/media/Dual Side T-shirt Artwork Mockup.png": "./static/media/Dual Side T-shirt Artwork Mockup.b37b8b318a822b7f1b33.png",
     "static/media/maori-carving-2-1423369.jpg": "./static/media/maori-carving-2-1423369.77688c0c05fd4864a493.jpg",
@@ -22,11 +22,13 @@
     "static/media/img-3.jpg": "./static/media/img-3.6d683c0ee6824af7961a.jpg",
     "static/media/maori-flax-3-1515872.jpg": "./static/media/maori-flax-3-1515872.0a3e4ad1f9c3eacb2448.jpg",
     "static/media/1 About The Trust.jpg": "./static/media/1 About The Trust.b2c9430504e11a889c28.jpg",
+    "static/media/2 - Pohutakawa.jpg": "./static/media/2 - Pohutakawa.9a6705b0294f85c4ab00.jpg",
     "static/media/3 Learn About Te Pa Whati.jpg": "./static/media/3 Learn About Te Pa Whati.2c8b907a36e12f3e1380.jpg",
     "static/media/Te Tiriti O Waitangi - Portion.jpg": "./static/media/Te Tiriti O Waitangi - Portion.6714468027f8fed0db71.jpg",
     "static/media/Tama Poata Joined By Others During A March.jpg": "./static/media/Tama Poata Joined By Others During A March.238750294f49a6ff0a44.jpg",
     "static/media/Wide Shot of Hipploite.jpg": "./static/media/Wide Shot of Hipploite.99d31e47de6e3b7c22ce.jpg",
     "static/media/Te Witi McMath Joined By Others In A Greenery.jpg": "./static/media/Te Witi McMath Joined By Others In A Greenery.03d62a259f86d1f8d59d.jpg",
+    "static/media/3 - Koromiko.jpg": "./static/media/3 - Koromiko.a26bc4733c824d298390.jpg",
     "static/media/Updated Portrait of Murray - PREFERRED.jpg": "./static/media/Updated Portrait of Murray - PREFERRED.5c21f48386506e794416.jpg",
     "static/media/hippolite with other people on an outdoors setiting.jpg": "./static/media/hippolite with other people on an outdoors setiting.7c09cc48d3ecd614f945.jpg",
     "static/media/Te Witi McMath Joined By Others During Treaty Tribes Coalition.jpg": "./static/media/Te Witi McMath Joined By Others During Treaty Tribes Coalition.5a472c53a7ec6450ff9c.jpg",
@@ -37,6 +39,7 @@
     "static/media/Te Witi McMath s Portrait.jpg": "./static/media/Te Witi McMath s Portrait.d9f82746ed702a1078ab.jpg",
     "static/media/Murray attending an event with other people.jpg": "./static/media/Murray attending an event with other people.b907970066b3512e5153.jpg",
     "static/media/2 Tama Poata Joined By Others During A March.jpg": "./static/media/2 Tama Poata Joined By Others During A March.281c2fd50f7bb6aaaafa.jpg",
+    "static/media/1. Kumara.jpg": "./static/media/1. Kumara.469b3dab5279e55f7d73.jpg",
     "static/media/img-9.jpg": "./static/media/img-9.f97f588f3670715d01b2.jpg",
     "static/media/2 Tama Poata Joined By Others During A Day Protest.jpg": "./static/media/2 Tama Poata Joined By Others During A Day Protest.a09ae7f6eabd7f9ea8f0.jpg",
     "static/media/2 Te Witi McMath Joined By Others In A Greenery.jpg": "./static/media/2 Te Witi McMath Joined By Others In A Greenery.5c2dfdb47331e224e4ca.jpg",
@@ -63,11 +66,11 @@
     "static/media/2nd Column Thumbail Image.jpg": "./static/media/2nd Column Thumbail Image.c5499463c6d47d6e9a90.jpg",
     "static/media/payment.png": "./static/media/payment.b4523ef470fab0966fcf.png",
     "index.html": "./index.html",
-    "main.917a9076.css.map": "./static/css/main.917a9076.css.map",
-    "main.b196820a.js.map": "./static/js/main.b196820a.js.map"
+    "main.78823a1e.css.map": "./static/css/main.78823a1e.css.map",
+    "main.9d530899.js.map": "./static/js/main.9d530899.js.map"
   },
   "entrypoints": [
-    "static/css/main.917a9076.css",
-    "static/js/main.b196820a.js"
+    "static/css/main.78823a1e.css",
+    "static/js/main.9d530899.js"
   ]
 }
