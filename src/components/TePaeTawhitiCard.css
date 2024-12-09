@@ -1,0 +1,328 @@
+.trust-container{
+
+}
+.te-top-div-show-divider {
+    flex: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    border-bottom: 1px solid black;
+}
+.imgTe-container {
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/3 Learn About Te Pa Whati.jpg');
+    justify-content: center;
+}
+.divimgTeOriginal-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Original Intentions.jpg');
+    justify-content: center;
+}
+.divimgTeApproach-container{
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/A New Approach To Growing Our Culture.jpg');
+    justify-content: center;
+}
+.divimgTe-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/What is Te Pai Tawhiti.jpg');
+    justify-content: center;
+}
+.divimgTe-Chart-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/What Is Te Pai Tawhiti - Chart.png');
+    justify-content: center;
+}
+.divimgTeWai262-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/What is Wai 262.jpg');
+    justify-content: center;
+}
+.divimgTeWai262-Progression-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Progression of Wai 262.jpg');
+    justify-content: center;
+}
+.divimgTeWai262-Maori-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Maori Engagemen.jpg');
+    justify-content: center;
+}
+.divimgOutcomes-container{
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Expected Outcomes.jpg');
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /* 垂直排列，确保文本在图片下方 */
+    align-items: center; /* 水平居中 */
+    text-align: center; /* 文本居中 */
+}
+.textTe-container{
+    margin: 180px 50px 10px 50px;
+    font-size: 34px;
+    color: white;
+}
+.textTeDown-container{
+    margin: 0px 30px 0px 50px;
+    width: 66%;
+    font-size: 16px;
+    flex-wrap: wrap;
+    color: white;
+}
+.labelTile-container{
+    font-size: 36px;
+    color: black;
+}
+.te-labelText-container{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.te-labelText-container1{
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.right-label{
+    float: right;
+}
+.right-Pou-label{
+    margin-left: 5px;
+    float: right;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.triangleTrust {
+    width: 100%;
+    height: 100%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid black; /* Color and size can be adjusted as needed */
+    position: relative;
+    top: 0px; /* Adjust the value here so that the subscript is positioned appropriately */
+    display: inline-block;
+    vertical-align: middle;
+}
+.te-content-wrapper {
+    margin-top: 20px; /* Make sure the content below is not obscured by the fixed div */
+    display: flex;
+}
+
+.fixed-leftTrust {
+    flex: 22%; /* Fixed width of div on the left  */
+    margin-top: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #d0d0d0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.right-container{
+    flex: 78%; /* Fixed width of div on the right */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.scrollable-right {
+    margin-top: 1em;
+    flex-grow: 1; /* The scrollable div on the right occupies the remaining width */
+    /*background-color: #d0d0d0;*/
+    margin-right: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden;
+}
+.fixed-below-scrollable {
+    margin-top: 1em;
+    margin-right: 50px;
+    background-color: #e0e0e0;
+    height: 30px;
+    width: 100%; /* 设置宽度为100% */
+    box-sizing: border-box;
+}
+.fixed-below-Pou-scrollable {
+    position:relative;
+    z-index:1;
+    margin-right: 50px;
+    margin-top: 2em;
+    margin-bottom: 1px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.contentTe{
+    margin-top: 1em;
+    font-size: 16px;
+    color:gray;
+    height: auto;
+}
+.contentTepae{
+    margin-top: 1em;
+    font-size: 16px;
+    color:black;
+    height: auto;
+}
+.content1{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.6);
+    height: auto;
+}
+.h4{
+    color:rgba(0, 0, 0, 1);
+}
+.te-labelText-container.selected {
+    width: 100%;
+    /*background-color: #ddd; !* 选中项的背景颜色 *!*/
+    background-color: white; /* 选中项的背景颜色 */
+    color: #333; /* 选中项的文字颜色 */
+    /* 添加其他样式 */
+}
+.resource-container{
+    background-size: 100% 100%;
+    justify-content: center;
+    display: grid;
+    /*background-color: #74A64D;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.resource-left {
+    width: 80%;
+    margin-top: 1em;
+    margin-right: 50px;
+    box-sizing: border-box;
+    background-image: url('../../public/images/1st Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-left-next {
+    width: 80%;
+    margin-top: 1em;
+    margin-right: 50px;
+    box-sizing: border-box;
+    background-image: url('../../public/images/2nd Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-left-last {
+    width: 80%;
+    margin-top: 1em;
+    margin-right: 50px;
+    box-sizing: border-box;
+    background-image: url('../../public/images/3rd Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-right-container{
+    width: 100%;
+    height: auto;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #74A64D;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.right-label---te{
+    display: none;
+    float: right;
+    position: relative;
+}
+@media(max-width: 1024px){
+    .right-label---te{
+        display: block;
+    }
+    .textTe-container{
+        margin: 100px 50px 10px 50px;
+        font-size: 26px;
+    }
+    .textTeDown-container{
+        width: 80%;
+        font-size: 16px;
+    }
+    .fixed-leftTrust {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .te-content-wrapper{
+        display: block;
+    }
+    .te-labelText-container{
+        display: none ;
+    }
+    .te-labelText-container1{
+        display: block ;
+    }
+    h1{
+        color: #74a541;
+    }
+}

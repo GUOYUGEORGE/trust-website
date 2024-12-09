@@ -1,0 +1,88 @@
+/* ImageSlider.css */
+.image-slider {
+    position: relative;
+    width: 100%;
+    min-height: 400px; /* 可根据需要调整高度 */
+}
+
+.image-container {
+    width: 80vh;
+    height: 50vh;
+    display: block;
+}
+/* ImageSlider.css */
+.nav-buttons {
+    position: absolute;
+    bottom: 20px; /* 置于底部 */
+    left: 0;
+    width: 80vh; /* 全宽 */
+    display: flex; /* 启用 flexbox */
+    justify-content: space-between; /* 元素之间分布 */
+    align-items: center; /* 垂直居中 */
+    padding: 10px; /* 增加一些内边距 */
+}
+
+.nav-text {
+    flex: 1; /* 文本占据剩余空间 */
+    padding-left: 10px; /* 留出一些空间 */
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.imgFirst-container {
+    margin-left: 10px;
+    flex: 100%;
+    width: 30vh;
+    height: 15vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url('../../public/images/1. Kumara.jpg');*/
+    justify-content: center;
+}
+.imgSecond-container {
+    margin-left: 10px;
+    flex: 100%;
+    width: 30vh;
+    height: 15vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url('../../public/images/2 - Pohutakawa.jpg');*/
+    justify-content: center;
+}
+.imgThird-container {
+    margin-left: 10px;
+    flex: 100%;
+    width: 30vh;
+    height: 15vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url('../../public/images/3 - Koromiko.jpg');*/
+    justify-content: center;
+}
+
+
+.right-leftSlider{
+    display: flex;
+    width: 80vh;
+    box-sizing: border-box;
+}

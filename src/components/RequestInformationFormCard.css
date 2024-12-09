@@ -1,0 +1,311 @@
+
+.requesrInformationTitle,
+.requesrInformationDiv {
+    flex-direction: column; /* 设置为纵向排列 */
+}
+
+.requesrInformationTitle {
+    margin-bottom: 20px; /* 标题与内容之间的间距 */
+    color: #74a64D;
+    font-size: 40px;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.requesrInformationDiv {
+    margin-top: -90px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* 将位置设置为相对 */
+    color: #3a5a40;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/andy-bridge-ZwN8fS_slIY-unsplash.jpg');
+    z-index: 0; /* 设置 z-index 为更低的值 */
+}
+.requesrInformationMask {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;/* this is same with  tShirtBackGroundDiv css`s height */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.overlay {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    border: 2px solid white;
+    border-radius: 40px;
+    flex-direction: column;
+}
+
+.overlay > div {
+    /* 悬浮内容的样式 */
+}
+.indicator {
+    position: absolute;
+    bottom: 10px; /* 距离底部的距离 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+}
+
+.indicator span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* 使圆形 */
+    background-color: #000;
+    margin: 0 5px; /* 圆点之间的间距 */
+    cursor: pointer;
+}
+.labelRightNormal2 {
+    margin-left: auto;
+    font-size: 12px;
+    color: red;
+}
+.requesrInformationTitle2{
+    color: #69a662;
+}
+
+.requesrInformationDiv2 {
+    margin-left: 3%;
+    margin-top: 4%;
+    flex-direction: column; /* 设置为纵向排列 */
+    width: 100%;
+    margin-bottom: 20px; /* 内容之间的间距 */
+}
+.requesrInformationDiv3 {
+    display: none;
+    margin-left: 3%;
+    margin-top: 4%;
+    flex-direction: column; /* 设置为纵向排列 */
+    width: 100%;
+    margin-bottom: 20px; /* 内容之间的间距 */
+}
+.requestCss{
+    display: flex;
+    width: 85%;
+}
+.requestInfoCss{
+    display: flex;
+    width: 90%;
+}
+.requestCss1{
+    display: flex;
+}
+.requestLeftCss {
+    flex: 0.5;
+    /*text-align: right;*/
+}
+.requestRightCss{
+    flex: 0.5;
+    margin-left: 2%;
+}
+.requestLeftCss1 {
+    flex: 1;
+}
+.requestInfoDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    align-items: flex-start;
+    overflow: hidden;
+    position: relative;
+}
+.requestRightCss3{
+    flex: 1;
+    text-align: center;
+    margin-left: 2%;
+    height: auto;
+    width: 100%;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.requestRightCss1{
+    flex: 0.5;
+    text-align: center;
+    margin-left: 2%;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.requestRightCss2{
+    flex: 1;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: -1%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.requestClass2 {
+    width: 100%; /* 下拉框的宽度 */
+    padding: 10px; /* 下拉框的内边距 */
+    font-size: 16px; /* 下拉框的字体大小 */
+    border: 1px solid #ccc; /* 下拉框的边框样式 */
+    border-radius: 5px; /* 下拉框的边框圆角 */
+    background-color: #fff; /* 下拉框的背景色 */
+    /*appearance: none; !* 隐藏默认的下拉箭头 *!*/
+    cursor: pointer; /* 设置鼠标指针样式为指针 */
+}
+.requestInformation-form-submit-btn{
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #74a64D;
+    border: 1px solid white;
+    color: #f1f1f1;
+    width: 100%;
+    /*font-weight: 500;*/
+    cursor: pointer;
+}
+.textareaCss{
+    width: 100%;
+    height: 150px;
+}
+.requestInformation-form-submit-btn:hover{
+    color: #3a5a40;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+.checkboxCss{
+    width: 10%;
+    display: inline-block;
+}
+.checkboxLabel{
+    display: inline-block; /* 将 label 设置为块级元素 */
+    font-size: 10px;
+    white-space: nowrap; /* 防止文本换行 */
+}
+.checkboxRightLabel{
+    margin-left: 50%;
+    display: inline-block; /* 将 label 设置为块级元素 */
+    font-size: 10px;
+    white-space: nowrap; /* 防止文本换行 */
+}
+
+
+.requestDiv {
+    width: auto;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    /*margin-left: -8%;*/
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.requestNextUp{
+    width: 100%;  /* 填充整个宽度 */
+    position: relative;
+    margin-left: -1%;
+    /*padding-top: 12%;*/
+    margin-right: 0;
+
+}
+.requestNextDown{
+    width: 100%;  /* 填充整个宽度 */
+    margin-left: -1%;
+    position: relative;
+    text-align: left;
+    /*padding-top: 12%;*/
+}
+.requestReturnDiv {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 60%;
+    height: 70vh;
+    background-color: white;
+    display: block;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    z-index: 12;
+}
+
+@media screen and (max-width: 960px) {
+    .requestReturnDiv {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        width: 100%;
+        height: 55vh;
+        background-color: white;
+        z-index: 999;
+        display: block;
+        border: 2px solid black;
+        border-radius: 40px;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+    }
+    .indicator{
+        display: none;
+    }
+    .requestCss{
+        display: block;
+    }
+    .requestRightCss3{
+        width: 95%;
+        margin-left: 0;
+    }
+    .labelRightNormal {
+        font-size: 10px;
+    }
+    .labelRightNormal2 {
+        margin-left: auto;
+        font-size: 10px;
+        color: red;
+        margin-right: 30px;
+    }
+    .labelRight {
+        font-size: 10px;
+    }
+    .radioLabel{
+        font-size: 10px;
+    }
+    .labelLeft{
+        font-size: 10px;
+    }
+    .requestRightCss{
+        margin-left: 0;
+    }
+    .requestInfoCss{
+        display: block;
+        padding-left: 1%;
+    }
+    .requesrInformationDiv{
+        height: 160vh;
+    }
+    .requesrInformationMask {
+        height: 160vh;/* this is same with  tShirtBackGroundDiv css`s height */
+    }
+    .overlay {
+        height: auto;
+    }
+    .requesrInformationDiv3{
+        display: block;
+    }
+}

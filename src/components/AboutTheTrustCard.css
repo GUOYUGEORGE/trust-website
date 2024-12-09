@@ -1,0 +1,352 @@
+.trust-container{
+
+}
+.top-div-show-divider {
+    flex: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    border-bottom: 1px solid black;
+}
+.imgTrust-container {
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/1 About The Trust.jpg');
+    justify-content: center;
+}
+.divimg-containerNew{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/duskfall-crew-vIQfQjrovW8-unsplash.jpg');
+    justify-content: center;
+}
+.divimg2-containerNew{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/newzealandflag.jpg');
+    justify-content: center;
+}
+.divimg3-containerNew{
+    position: relative;
+    overflow: hidden;
+    width: 80vh;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Te Tiriti O Waitangi - Portion.jpg');
+    justify-content: center;
+}
+.about-text-container{
+    margin: 80px 50px 20px 50px;
+    font-size: 66px;
+    color: white;
+}
+.labelTile-container{
+    font-size: 36px;
+    color: black;
+}
+.about-labelText-container{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.about-labelText-container1{
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.right-label{
+    float: right;
+}
+.right-Pou-label{
+    margin-left: 5px;
+    float: right;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.triangleTrust {
+    width: 100%;
+    height: 100%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid black; /* Color and size can be adjusted as needed */
+    position: relative;
+    top: 0px; /* Adjust the value here so that the subscript is positioned appropriately */
+    display: inline-block;
+    vertical-align: middle;
+}
+.content-about-wrapper {
+    margin-top: 20px; /* Make sure the content below is not obscured by the fixed div */
+    display: flex;
+}
+
+.about-fixed-leftTrust {
+    flex: 22%; /* Fixed width of div on the left  */
+    margin-top: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #d0d0d0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.h1AboutTrust-container{
+    margin: 180px 50px 0px 50px;
+    font-size: 27px;
+    color: white;
+}
+.right-container{
+    flex: 78%; /* Fixed width of div on the right */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.scrollable-trust-right {
+    margin-top: 1em;
+    flex-grow: 1; /* The scrollable div on the right occupies the remaining width */
+    /*background-color: #d0d0d0;*/
+    margin-right: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: hidden; /* Allow vertical scrolling */
+}
+.fixed-below-scrollable {
+    margin-top: 1em;
+    margin-right: 50px;
+    background-color: #e0e0e0;
+    height: 30px;
+    width: 100%; /* 设置宽度为100% */
+    box-sizing: border-box;
+}
+.fixed-below-Pou-scrollable-trust {
+    position:relative;
+    z-index:1;
+    margin-right: 50px;
+    margin-top: 2em;
+    margin-bottom: 1px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.content{
+    margin-top: 1em;
+    font-size: 16px;
+    color:gray;
+    height: 33vh;
+}
+.contentTrust{
+    margin-top: 1em;
+    font-size: 16px;
+    color:black;
+    height: 100%;
+}
+.contentTrustBlack{
+    font-size: 16px;
+    color:black;
+    height: 15vh;
+}
+.textTrust-container{
+    margin: 0px 10px 0px 50px;
+    width: 100%;
+    font-size: 16px;
+    flex-wrap: wrap;
+    color: white;
+}
+.contentAboutTrustCardContent{
+    margin-top: 1em;
+    font-size: 12px;
+    color:gray;
+    height: 33vh;
+}
+.content{
+    margin-top: 1em;
+    font-size: 16px;
+    color:gray;
+    height: 33vh;
+}
+.contentGap{
+    margin-top: 1em;
+    font-size: 16px;
+    color:gray;
+    height: 20vh;
+}
+.content1{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.6);
+    height: auto;
+}
+.contentTrustLabel{
+    font-size: 16px;
+    color:rgba(0, 0, 0, 0.6);
+    height: auto;
+}
+.h4Trust{
+    color:rgba(0, 0, 0, 1);
+}
+.about-labelText-container.selected {
+    width: 100%;
+    background-color: white; /* 选中项的背景颜色 */
+    color: #333; /* 选中项的文字颜色 */
+    /* 添加其他样式 */
+}
+.resource-trust-container{
+    margin-top: 1em;
+    background-size: 100% 100%;
+    justify-content: left;
+    display: grid;
+    height: 45vh;
+    /*background-color: #74A64D;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.resource-1 {
+    width: 80%;
+    margin-top: 1em;
+    height: 40vh;
+    margin-right: 50px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/1st Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-2 {
+    width: 80%;
+    margin-top: 1em;
+    height: 40vh;
+    margin-right: 50px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/1st Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-3 {
+    width: 80%;
+    margin-top: 1em;
+    margin-right: 50px;
+    height: 40vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../public/images/2nd Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-4 {
+    width: 80%;
+    margin-top: 1em;
+    margin-right: 50px;
+    height: 40vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../public/images/3rd Column Thumbail Image.jpg');
+    padding: 20px;
+    display: grid;
+}
+.resource-trust-right-container{
+    width: 100%;
+    height: 40vh;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #74A64D;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.right-label-about-the-trust{
+    display: none;
+    float: right;
+    position: relative;
+}
+.trust-div{
+    display: flex;
+}
+.trust-divRight{
+    flex: 1;
+}
+.trust-divLeft{
+    flex: 1;
+}
+@media(max-width: 1024px){
+    .about-fixed-leftTrust{
+        margin-left:0;
+        margin-right: 0;
+    }
+    .content-about-wrapper {
+        display: block;
+    }
+    .about-labelText-container{
+        display: none ;
+    }
+    .about-labelText-container1{
+        display: none ;
+    }
+    .labelTile-container{
+        font-size: 32px;
+    }
+    .right-label-about-the-trust{
+        display: block;
+    }
+    .about-text-container{
+        margin: 120px 50px 20px 50px;
+        font-size: 50px;
+        color: white;
+    }
+    .h1-container{
+        margin: 120px 50px 20px 50px;
+        font-size: 50px;
+        color: white;
+    }
+    h1{
+        color: #74a541;
+    }
+    .h1AboutTrust-container{
+        margin: 100px 50px -10px 30px;
+        font-size: 27px;
+        color: white;
+    }
+    .textTrust-container{
+        margin: 0px 10px 0px 30px;
+        width: 80%;
+        font-size: 16px;
+        flex-wrap: wrap;
+        color: white;
+    }
+    .trust-div{
+        display: block;
+    }
+}

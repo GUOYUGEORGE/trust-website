@@ -1,182 +1,393 @@
 .navbar {
-    background: #3a5a40;
-    height: 120px; /*80px*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+  height: 90px;
+  font-size: 1.0rem;
+  position: sticky;
+  top: 0;
+  z-index: 990;
+}
+
+.navbar-containerTop {
+  display: flex;
+  justify-content: flex-start;  /* 保证所有子元素从左侧开始排列 */
+  align-items: center; /* 保持垂直居中对齐 */
+  height: 85px;
+  padding-top: 5%;
+  max-width: 100%;
+}
+/*.navbar-container {*/
+  /*display: flex;*/
+  /*justify-content: flex-start;  !* 保证所有子元素从左侧开始排列 *!*/
+  /*align-items: center; !* 保持垂直居中对齐 *!*/
+  /*height: 85px;*/
+  /*padding-top: 6.5%;*/
+  /*max-width: 100%;*/
+/*}*/
+.navbar-container {
+  display: none;
+}
+.navbar-container2{
+  display: block;
+  position: fixed; /* 使用 fixed 定位，使得 div 固定在视窗的特定位置 */
+  padding-top: 4.8%;
+  align-items: end;
+  width: 100px;
+  right: 0px;     /* 从视窗右部 10px 的位置开始 */
+  top:0px;
+  height: auto;
+  width: auto;
+}
+/*.navbar-container2 {*/
+  /*display: none;*/
+  /*padding-top: 4.8%;*/
+  /*align-items: end; !* 保持垂直居中对齐 *!*/
+  /*height: auto;*/
+  /*width: auto;*/
+/*}*/
+
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 80px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.navbar-logo > img {
+  height: 85px; /*55px*/
+}
+.navbar img {
+  height: 85px; /*55px*/
+  background-color: inherit;
+}
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+}
+.right-leftNav{
+  background: #74A64D;
+  width: 39.33vh; /* 如果需要，调整宽度以适应内容 */
+  /*height: 50px; !* 根据需要调整高度 *!*/
+  height: 85px; /* 根据需要调整高度 */
+  right: 0;
+  display: flex;
+  align-items: center;  /* 垂直居中对齐 */
+  padding-left: 10px; /* 如果需要，可以增加左内边距 */
+  z-index: 999;
+}
+.leftNavbar {
+  flex: 1.3;
+  justify-content: center;
+}
+.rightNavbar {
+  flex: 0.7;
+  color: white;
+  justify-content: center;
+}
+.labelNar{
+  color: white;
+  font-size: 30px;
+  width: auto;
+}
+.triangleNavbar {
+  position: absolute;
+  top: 50%; /* 将三角形垂直居中 */
+  transform: translateY(-33%);
+  width: 0;
+  height: 0;
+  margin-top: 42.5px;
+  border-style: solid;
+  /*border-width: 10px 0 10px 10px; !* 设置三角形的大小和形状 *!
+  border-color: transparent transparent transparent white; !* 设置三角形的颜色 *!*/
+  border-width: 25px 25px 0 25px; /* 设置三角形的大小和形状 */
+  border-color: white transparent white transparent ; /* 设置三角形的颜色 */
+}
+.nav-menu {
+  display: grid;
+  margin-left: 20px;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  margin-top: 50px;
+  height: auto;
+  width: 25.5vw;
+  justify-content: flex-end;
+  background-color: black;
+  z-index: 900;
+
+}
+.nav-menu > li {
+  display: inline-block; /* 或使用 flex 布局 */
+  color: white; /* 设置文本颜色为白色 */
+}
+.nav-item {
+  height: 80px;
+  width: 180px;
+}
+.nav-item2 {
+  display: block;
+  height: 80px;
+  width: 180px;
+}
+.nav-item1 {
+  float: right;
+  height: 50px;
+  width:  61.5%;
+  font-size: 15px;
+  background-color: #353232;
+}
+.nav-item3 {
+  float: right;
+  height: 50px;
+  font-size: 15px;
+  width: 61.5%;
+  background-color: #353232;
+}
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+
+.nav-links:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+/*add by dh(leo)*/
+.hover-trigger {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-align:left;
+  padding: 0.5rem 1rem;
+  height: 100%;
+}
+.hover-trigger:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+.subCatogoryCss{
+  margin-top: 28px;
+  width: 10%;
+}
+.hidden-div {
+  color: #fff;
+  align-items: center;
+  text-decoration: none;
+  text-align:left;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  width: 160%;
+  display: none;
+  background-color: #3a5a40;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white; /* 可以根据需要调整颜色和大小 */
+  position: relative;
+  top: 6px; /* 调整这里的值以使下标位置合适 */
+  display: inline-block;
+  vertical-align: middle;
+}
+.hover-trigger:hover + .hidden-div,
+.hidden-div:hover {
+  display: block;
+}
+/*end */
+
+.fa-bars {
+  color: #fff;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .NavbarItems {
+    position: relative;
   }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    max-width: 1500px;
+
+  .navbar-logo > p {
+    display: none;
+    color: black;
   }
-  
-  .navbar-logo {
+  /*add by dh(leo)*/
+  .hover-trigger {
     color: #fff;
-    justify-self: start;
-    margin-left: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .navbar-logo > img {
-
-    height: 110px;
-    width: 110px;
-
-  }
-  
-  .fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-  }
-  
-  .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 60vw;
-    justify-content: flex-end;
-    margin-right: 2rem;
-  }
-  
-  .nav-item {
-    height: 80px;
-  }
-  
-  .nav-links {
-    color: #fff;
     display: flex;
     align-items: center;
     text-decoration: none;
+    text-align:left;
     padding: 0.5rem 1rem;
     height: 100%;
   }
-  
-  .nav-links:hover {
-    border-bottom: 4px solid #fff;
+  .hover-trigger:hover {
+    border-bottom: 1px solid #fff;
+    background-color: #BDBDBD;
     transition: all 0.2s ease-out;
   }
-  
-  .fa-bars {
+  .hidden-div {
+    position: relative;
+    height: auto;
     color: #fff;
+    align-items: center;
+    text-decoration: none;
+    text-align:left;
+    padding-left: 10px;
+    margin-left: 120px ;
+    display: none;
+    background-color: #3a5a40;
   }
-  
+  .hover-trigger:hover + .hidden-div,
+  .hidden-div:hover {
+    display: block;
+  }
+  .nav-menu {
+    display: block;
+    background: #3a5a40;
+    margin-top: 50px ;/*此处跟right-leftNav的高度保持一致*/
+    width: 40vw;
+    right: 0;
+    transition: all 0.5s ease;
+    margin-right: 0rem;
+    z-index: 1;
+  }
+  .nav-menu > li {
+    display: block;
+    color: white;
+  }
+  .subCatogoryCss{
+    margin-top: 33vh;
+    margin-left: 20vh;
+    width: 10%;
+  }
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+
+  .navbar-logo {
+    position: absolute;
+    font-size: 1.0rem;
+  }
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
   .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
+  .right-leftNav{
+    background: #74A64D;
+    display: block;
+    position: fixed; /* 使用 fixed 定位，使得 div 固定在视窗的特定位置 */
+    right: 0px;     /* 从视窗右部 0px 的位置开始 */
+    top:0px;
+    width: 25%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* 阴影效果 */
+    z-index: 3;
+  }
+
+  .leftNavbar {
+    margin-top: 15px;
+    flex: 1.3;
+    justify-content: center;
+  }
+  .rightMobileNavbar{
+    margin-top: -10px;
+    color: white;
+  }
+  .rightNavbar {
+    display:none;
+    flex: 0.7;
+    color: white;
+    justify-content: center;
+  }
+  .nav-item1 {
+    display: block;
+    float: right;
+    height: 50px;
+    font-size: 12px;
+    width: 61.5%;
+  }
+  .nav-item2 {
     display: none;
   }
-  
-  .menu-icon {
+  .nav-item3 {
+    float: right;
+    height: 50px;
+    font-size: 12px;
+    width: 61.5%;
+    background-color: #353232;
+  }
+  .navbar-container{
     display: none;
   }
-  
-  @media screen and (max-width: 960px) {
-    .NavbarItems {
-      position: relative;
-    }
-
-
-
-    .navbar-logo > p {
-
-      display: none;
-      color: black;
-
-    }
-
-
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 90vh;
-      position: absolute;
-      top: 80px;
-      left: -100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-  
-    .nav-menu.active {
-      background: #3a5a40;
-      margin-top: 40px;
-      justify-content: flex-start;
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
-    }
-  
-    .nav-links {
-      text-align: center;
-      padding: 2rem;
-      width: 100%;
-      display: table;
-    }
-  
-    .nav-links:hover {
-      background-color: #fff;
-      color: #242424;
-      border-radius: 0;
-    }
-  
-    
-    .navbar-logo {
-      position: absolute;
-      font-size: 1.5rem;
-
-    }
-    
-
-
-    .menu-icon {
-      display: block;
-      position: absolute;
-      justify-self: center;
-
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 100%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-  
-    .fa-times {
-      color: #fff;
-      font-size: 2rem;
-    }
-  
-    .nav-links-mobile {
-      display: block;
-      text-align: center;
-      margin: 2rem auto;
-      border-radius: 4px;
-      width: 80%;
-      text-decoration: none;
-      font-size: 1.5rem;
-      background-color: transparent;
-      color: #fff;
-      padding: 14px 20px;
-      border: 1px solid #fff;
-      transition: all 0.3s ease-out;
-    }
-  
-    .nav-links-mobile:hover {
-      background: #fff;
-      color: #242424;
-      transition: 250ms;
-    }
+  .navbar-container2{
+    display: block;
+    position: fixed; /* 使用 fixed 定位，使得 div 固定在视窗的特定位置 */
+    right: 0px;     /* 从视窗右部 10px 的位置开始 */
+    top:0px;
   }
+  .leftMobileNavbar{
+    justify-content: center;
+    display: block;
+  }
+
+  .triangleMobileNavbar {
+    position: relative;
+    float: right;
+    top: 50%; /* 将三角形垂直居中 */
+    transform: translateY(-33%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px; /* 设置三角形的大小和形状 */
+    border-color: white transparent white transparent ; /* 设置三角形的颜色 */
+  }
+}

@@ -1,0 +1,235 @@
+.textLib-container{
+    margin: 180px 50px 20px 50px;
+    font-size: 34px;
+    color: white;
+}
+.imgLib-container {
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/3 Learn About Te Pa Whati.jpg');
+    justify-content: center;
+}
+
+.divLeft {
+    flex: 1; /* 让左侧 div 占据剩余空间 */
+}
+
+.divRight {
+    flex: 0.2; /* 右侧 div 不占据剩余空间 */
+}
+.libLabel{
+    font-size: 36px;
+    color: #74A64D;
+}
+
+.labelLibButoon {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+.seacrchLectureLabel{
+    font-size: 16px;
+    flex: 1; /* 让每个标签占据相同的空间 */
+    text-align: center; /* 文字居中 */
+    color: gray;
+}
+
+
+
+.cards__wrapperLib {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important; /* 每行均匀分布卡片 */
+    margin: 10px 0 15px;
+}
+
+.cards__itemLib {
+    margin-bottom: 1rem !important;
+    display: flex;
+    flex: 1 0 30%;
+    margin: 0 0.2rem;
+    border-radius: 1px;
+}
+.custom_cards__item__buttonLib{
+    font-size: 18px;
+    width: 100%;
+    background-color: #74A64D;
+}
+.custom_cards__item__linkLib {
+    display: flex;
+    flex-direction: column; /* 明确指明方向，确保子元素垂直排列 */
+    align-items: stretch; /* 拉伸子项以填满交叉轴 */
+    justify-content: space-between; /* 使用space-between保证子元素间隔均匀，也可用flex-end让内容向底部对齐 */
+    height: 100%; /* 确保有定义高度，可能需要调整 */
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    min-height: 300px; /* 例如设置一个最小高度 */
+}
+.invisible {
+    width: 40vh;
+    min-height: 300px; /* 例如设置一个最小高度 */
+    visibility: hidden;
+}
+
+.custom_cards__item__textLib {
+    color: #252e48;
+    font-size: 16px;
+    line-height: 24px;
+}
+.custom_cards__item__titleLib {
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+}
+.custom_cards__item__button_divLib {
+    padding: 10px 0px 10px;
+    width: 100%; /* 按钮宽度全宽 */
+    margin-top: auto; /* 推动到底部 */
+}
+.custom_cards__item__pic-wrapLib {
+    position: relative;
+    width: 100%;
+    padding-top: 67%;
+    overflow: hidden;
+    background-color: #f0f0f0; /* 一个轻灰色背景，或者可以用加载中的占位图 */
+}
+/* 确保其他元素（如标题、文本）占据所有剩余空间 */
+.custom_cards__item__infoLib, .custom_cards__item__info_textLib, .custom_cards__item__pic-wrapLib {
+    flex-grow: 1;
+}
+
+
+.empty-div {
+    width: calc(33.33% - 2rem); /* 每个卡片的宽度 */
+    margin-bottom: 2rem; /* 底部间距 */
+}
+.divForMobile{
+    display: none;
+}
+.divForMobile2{
+    display: none;
+}
+.divRightForMobile{
+    display: none;
+}
+.libDiv {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between; /* 将左右两个 div 分别放置在最左和最右 */
+}
+.libDiv2 {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between; /* 将标签等间隔分布在容器内 */
+}
+.libDiv1 {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: start; /* 将左右两个 div 分别放置在最左和最右 */
+}
+.buttonLib {
+    display: flex;
+    height: 80px;
+    justify-content: center; /* 将标签等间隔分布在容器内 */
+    text-align: center;
+    line-height: 20px;
+    margin: 0 10px 10px 0; /* 设置间隙 */
+    cursor: pointer;
+    border: 1px solid black;
+    align-items: center;
+    width: 20vh; /* 设置固定宽度 */
+    text-decoration: none;
+}
+.libDiv1ForMobile{
+    display: flex;
+}
+.lib_cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 80%;
+    margin-left: 10%;
+    /*margin: 0 auto;*/
+}
+@media screen and (max-width: 1024px) {
+
+
+
+    .cards__wrapperLib{
+        width: 100%; /* 根据需要设置卡片的宽度 */
+        display: block;
+        flex-wrap: nowrap;
+        justify-content: start; /* 每行均匀分布卡片 */
+        margin: 5px 0 0;
+
+    }
+
+    .cards__itemLib{
+        flex: 1 0 55%;
+    }
+    .libLabel{
+        font-size: 28px;
+    }
+
+    .libDiv1{
+        display: block;
+    }
+    .buttonLib {
+        width: 100%; /* 设置固定宽度 */
+    }
+    .libDiv2{
+        display: none;
+    }
+    .divRight{
+        display: none;
+    }
+    .divRightForMobile{
+        width: 80%;
+        margin-left: 10%;
+        display: block;
+    }
+    .divForMobile{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .divForMobile2{
+        display: flex;
+        width: 80%;
+        justify-content: start;
+    }
+}
+/*@media screen and (max-width: 768px) {*/
+    /*.cards__itemLib {*/
+        /*!*width: 100%; !* 每行只显示一个卡片 *!*!*/
+        /*flex: 1 0 35%;*/
+    /*}*/
+    /*.libDiv2{*/
+        /*display: none;*/
+    /*}*/
+    /*.divRight{*/
+        /*display: none;*/
+    /*}*/
+    /*.divForMobile{*/
+        /*display: block;*/
+        /*width: 80%;*/
+        /*margin-left: 10%;*/
+        /*justify-content: space-between; !* 将标签等间隔分布在容器内 *!*/
+    /*}*/
+/*}*/

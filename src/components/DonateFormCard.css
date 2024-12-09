@@ -1,0 +1,341 @@
+.donateDiv {
+    display: flex;
+    width: 100%;
+}
+.donateDiv2 {
+    display: none;
+    width: 100%;
+}
+.donateFormCss {
+    margin-left: 1%;
+    display: flex;
+    width: 80%;
+}
+.donateFormLeftCss {
+    flex: 0.5;
+    margin-left: -1.4%;
+}
+.donateFormRightCss {
+    flex: 0.5;
+    margin-left: 1%;
+}
+.donateFormMiddleCss {
+    flex: 0.5;
+    margin-left: 1%;
+}
+.donateTitle2{
+    color: #69a662;
+}
+.donateIndicator {
+    position: absolute;
+    bottom: 10vh; /* 距离底部的距离 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+    z-index: 4;
+}
+.donateMask {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 860px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.donateOverlay {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 70%;
+    overflow-x: hidden;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    border: 2px solid white;
+    border-radius: 40px;
+    flex-direction: column;
+}
+.donateBackGroundDiv {
+    margin-top: -90px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* 将位置设置为相对 */
+    color: #3a5a40;
+    background-size: 100% 100%;
+    height: 860px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/andy-bridge-ZwN8fS_slIY-unsplash.jpg');
+    z-index: 0; /* 设置 z-index 为更低的值 */
+}
+
+.donateIndicator span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* 使圆形 */
+    background-color: #000;
+    margin: 0 5px; /* 圆点之间的间距 */
+    cursor: pointer;
+}
+
+.donateTitle,
+.donateDiv {
+    margin-left: 3%;
+    flex-direction: column; /* 设置为纵向排列 */
+}
+
+.donateTitle {
+    margin-bottom: 20px; /* 标题与内容之间的间距 */
+    color: #74a64D;
+    font-size: 40px;
+}
+.donateLeft {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    font-size: 40px;
+    height: 100%;
+}
+
+.placeholder {
+    flex-grow: 1;
+}
+.donateCss1 {
+    width: 44%;
+    padding-right: 10px;
+}
+.donateCssFlex {
+    display: flex;
+    align-items: center;
+}
+.donateInputClass2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.donateInputClass2:hover {
+    border-color: #999;
+}
+
+.donateInputClass2:focus {
+    outline: none;
+    border-color: #007bff;
+}
+.donatePaymentDiv {
+    text-align: center;
+    width: 18vh;
+    color: #3a5a40;
+    background-size: 100% 100%;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/payment.png');
+    z-index: 1;
+}
+.donateClass{
+    display: inline-block;
+    width:20%;
+}
+.donateClass1{
+    display: inline-block;
+    width:auto;
+}
+.donateInputClass1{
+    display: inline-block;
+    width:auto;
+}
+.donateInputClass3 {
+    width: auto; /* 下拉框的宽度 */
+}
+.donateRight {
+    margin-left: 5%;
+    flex: 1.2;
+    text-align: center;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a5a40;
+    background-size: 100% 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Dual Side T-shirt Artwork Mockup.png');
+    justify-content: center;
+}
+
+.buttonDonate {
+    z-index: 1;
+    display: flex;
+    margin-top: 20px;
+    margin-left: -35%;
+    height: 40px;
+    width: 160px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid white;
+    align-items: center;
+    background-color: #74a64D;
+}
+
+.labelDonate {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #74a64D;
+}
+
+.labelTitle {
+    color: #74a64D;
+}
+.donateClass2 {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.donateInputClass{
+    display: inline-block;
+    margin-left: 5%;
+    width:25%;
+}
+.donateCss{
+    width: 44%;
+    padding-left: 10px;
+    height: auto;
+}
+.donateInputCss{
+    width: 100%;
+    height: auto;
+}
+
+.donateinputClass3 {
+    width: 75%; /* 下拉框的宽度 */
+}
+.buttonDonateForm {
+    z-index: 1;
+    display: flex;
+    margin-top: 20px;
+    height: 40px;
+    width: auto;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid white;
+    align-items: center;
+    background-color: #74a64D;
+}
+
+
+.donateLeftCss {
+    flex: 1;
+    /*text-align: right;*/
+}
+.donateRightCss{
+    flex: 1;
+    text-align: center;
+    height: auto;
+    width: 40%;
+    display: flex;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.donateRightLabelCss{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    color: gray;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.buttonDonateAndOrder {
+    display: flex;
+    margin-top: 20px;
+    height: 40px;
+    margin-left: 5%;
+    width: 90%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid white;
+    align-items: center;
+    background-color: #74a64D;
+}
+.donateReturnDiv {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 60%;
+    height: 70vh;
+    background-color: white;
+    display: block;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    z-index: 12;
+}
+@media screen and (max-width: 960px) {
+    .donateReturnDiv {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        width: 100%;
+        height: 55vh;
+        background-color: white;
+        z-index: 3;
+        display: block;
+        border: 2px solid black;
+        border-radius: 40px;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+    }
+    .donateFormCss {
+        display: block;
+    }
+    .donateFormRightCss {
+        flex: 0.5;
+        margin-left: -1.4%;
+    }
+    .donateIndicator{
+        display: none;
+    }
+    .donateDiv2 {
+        margin-left: 3%;
+        display: block;
+    }
+    .donateOverlay {
+        height: auto;
+        left: 5%;
+        width: 90%;
+    }
+    .donateBackGroundDiv{
+        height: 160vh;
+    }
+    .donateMask{
+        height: 160vh;
+    }
+}

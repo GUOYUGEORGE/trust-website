@@ -1,54 +1,178 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
-  }
-  
-  .home,
-  .events,
-  .about-us,
-  .donate {
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-  }
-  
-  .events {
-    background-image: url('../public/images/img-2.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-  
-  .about-us {
-    background-image: url('../public/images/img-3.jpg');
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home,
+.events,
+.about-us,
+.donate {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.events {
+  background-image: url('../public/images/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.about-us {
+  background-image: url('../public/images/img-3.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+}
+
+.donate {
+  background-image: url('../public/images/img-9.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+body, html {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  position: relative; /* 将视频容器的定位属性改为相对定位 */
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  display: flex; /* 使用 flex 布局 */
+  justify-content: left; /* 在水平方向上居中 */
+  align-items: center; /* 在垂直方向上居中 */
+}
+
+.video-bg {
+  width: 100%; /* 将视频宽度设置为100% */
+  height: auto; /* 让浏览器自动计算视频的高度 */
+  max-width: 100%; /* 限制视频的最大宽度为容器的宽度 */
+  max-height: 100%; /* 限制视频的最大高度为容器的高度 */
+}
+.aboveVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 允许点击事件穿透 */
+  background-image: url('../public/images/hero-42171.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.play-button {
+  background: rgba(0, 0, 0, 0); /* 半透明背景 */
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  pointer-events: auto; /* 恢复点击事件 */
+  z-index: 2; /* 确保按钮在 appMask 之上 */
+}
+
+
+.inTheMiddle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.app-divider {
+  width: 100vh;
+  padding: 3px;
+  box-sizing: border-box;
+  margin-right: 50px;
+  border-bottom: 2px solid white;
+}
+
+.play-label {
+  font-size: 56px;
+  color: white;
+}
+.appMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0; /* 确保 appMask 在按钮之下 */
+  pointer-events: none; /* 确保 appMask 不阻挡点击事件 */
+}
+.app-logo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.app-logo > img {
+  height: 120px;
+}
+.appLabel{
+  text-align: center;
+  font-size: 62px;
+  color: white;
+}
+.appLabelDown{
+  text-align: center;
+  font-size: 32px;
+  color: white;
+}
+@media screen and (max-width: 960px) {
+
+  .hero-container > p {
     text-align: center;
   }
-  
-  .donate {
-    background-image: url('../public/images/img-9.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
+
+  .appLabel{
+    text-align: center;
+    font-size: 42px;
+    color: white;
   }
-
-
-  @media screen and (max-width: 960px) {
-
-    .hero-container > p {
-      text-align: center;
-    }
-
+  .appLabelDown{
+    text-align: center;
+    font-size: 22px;
+    color: white;
   }
+/*  .home-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }*/
+}

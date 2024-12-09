@@ -1,96 +1,301 @@
-video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
 
+.slide-container {
+    /*position: relative;*/
+    width: 100%;
+    height: auto;
+    margin-top: -90px;/*新增的,覆盖在前面的navbar上面*/
+    overflow: hidden;
 }
 
-.hero-container {
-
-    background: url('../../public/images/img-home.jpg') center center/cover no-repeat;
-    height: 100vh;
+.slide {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
-    object-fit: contain;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/hero-42171.jpg');
+    justify-content: left;
+    overflow: hidden; /* Used to mask content beyond the container */
+    /*opacity: 1;*/
+    /*transform: translateX(0%);*/
+    /*transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);*/
 }
-
-.hero-container > h1 {
-
-    color: #fff;
-    font-size: 100px;
+.slideUp{
+    position: relative;
+    z-index: 1;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: 3px solid white;
-    padding: 20px;
-
+    color: white; /* Set the font color :white */
+    font-size: 80px; /* Set the font size and adjust it as needed */
+}
+.slideDown{
+    position: relative;
+    z-index: 1;
+    margin-left: 20%;
+    text-align: left;
+    color: white; /* Set the font color :white */
+    font-size: 40px; /* Set the font size and adjust it as needed */
+}
+.mask {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1200px;
+    /*background: linear-gradient(to bottom, transparent, #333); !* Add a gradient mask effect *!*/
+    background-color: rgba(0, 0, 0, 0.5); /* Black mask, transparency can be adjusted as needed */
+    z-index: 0; /* Set z-index to 0 to ensure the mask is underneath the content */
+}
+.labelButoon {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.nextDiv {
+    margin-top: -45px;/* This is used to cover the extra white space after displaying the arc. */
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    justify-content: center;
+    display: grid;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    grid-template-columns: 42% 58%; /* Set the left side to 40% and the right side to 60% */
+    grid-gap: 2px;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 50px; /* Adjust to the arc size you want */
+    border-top-right-radius: 50px; /* Adjust to the arc size you want */
+    background-color: #fff;
+}
+.nextUpLabel{
+    color: #74a64D;
+    font-size: 25px;
+}
+.nextUpLabelBlack1{
+    font-size: 16px;
+    position: relative;
+    z-index: 4;
+}
+.nextUpLabelBlack2{
+    font-size: 16px;
+    position: relative;
+    color: #252e48;
+    z-index: 5;
+}
+.nextUp{
+    position: relative;
+    justify-content: center;
+    padding: 178px 157px 122px 157px;
+    /*padding-left: 157px;*/
+    /*padding-right: 157px;*/
+    /*padding-bottom: 122px;*/
+    /*padding-top: 178px;*/
+}
+/*.nextUp::after {*/
+    /*margin-top: 5%;*/
+    /*content: ''; !* 添加内容 *!*/
+    /*position: absolute; !* 使伪元素绝对定位 *!*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*height: 100%;*/
+    /*width: 2px; !* 竖线宽度 *!*/
+    /*background-color: black; !* 竖线颜色 *!*/
+    /*left: 100%; !* 使竖线位于 div 中间 *!*/
+    /*transform: translateX(-50%); !* 通过 transform 属性使竖线水平居中 *!*/
+/*}*/
+.nextDown{
+    font-size: 22px;
+    text-align: left;
+    z-index: 3;
+    padding-right: 157px;
+    padding-bottom: 122px;
+    padding-top: 178px;
+}
+.labelHero{
+    padding-top: 333px;
+}
+.heroLabel{
+    font-size: 18px;
+}
+.buttonDiv {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    padding-top: 61px;
+    padding-bottom: 423px;
+}
+.facebook_instagram__social{
+    margin-right: 10px;
+    color: var(--white-color);
+    text-decoration: none;
+    z-index: 12;
+    font-size: 20px;
+}
+.buttonHero {
+    z-index: 1;
+    display: flex;
+    width: 17%;
+    height: 80px;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    align-items: center;
+}
+.buttonLabel{
+    display: block; /* 将 label 设为块级元素 */
+    color:white;
+    font-size: 20px;
+    text-align: center; /* 设置文字居中 */
+}
+.videoHeroSection{
+    width:1144px;
+    margin-left: 157px;
+    margin-right: 157px;
+    height:538px;
+    justify-content: center;
+    text-align:center;
 }
 
-.hero-container > p {
 
-    margin-top: 8px;
-    color: #fff;
-    font-size: 32px;
-
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.slide-entering,
+.slide-exiting {
+    opacity: 0;
+}
+.slide-entered,
+.slide-exited {
+    opacity: 1;
+}
+.slide.visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.mute-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+.prev {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    left: 0;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    right: 0;
 }
 
-.hero-btns {
-    margin-top: 32px;
-
-}
-
-.hero-btns .btn {
-    margin: 6px;
-}
-
-.fa-play-circle {
-    margin-left: 4px;
-}
 
 @media screen and (max-width: 960px) {
 
-    .hero-container > h1 {
-
-        font-size: 70px;
-        margin-top: -150px;
+    /*.nextUp::after {*/
+        /*content: ''; !* 添加内容 *!*/
+        /*position: absolute; !* 使伪元素绝对定位 *!*/
+        /*top: auto; !* 使横线位于 div 中间 *!*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*height: 2px; !* 横线高度 *!*/
+        /*width: 100%; !* 横线宽度 *!*/
+        /*background-color: black; !* 横线颜色 *!*/
+        /*transform: translateY(-50%); !* 通过 transform 属性使横线垂直居中 *!*/
+    /*}*/
+    .labelHero{
+        font-size: 28px;
+        padding-top: 278px;
     }
-
-
-    
-}
-
-@media screen and (max-width: 768px) {
-
-    .hero-container > h1 {
-
-        font-size: 50px;
-        margin-top: -100px;
+    .slideDown{
+        margin-top: 20px;
+        margin-left: 21%;
+        font-size: 18px; /* Set the font size and adjust it as needed */
     }
-
-    .hero-container > p {
-
-        font-size: 30px;
+    .buttonDiv {
+        position: sticky;
+        display: block;/* cancle the "flex" layout*/
+        justify-content: center; /* 水平居中 */
+        margin-left: 40%;
+        z-index: 3;
+        padding-bottom: 64px;
+    }
+    .labelButoon {
+        font-size: 18px;
+        color: #ffffff; /* 初始颜色 */
+        transition: color 0.3s; /* 添加过渡效果 */
+    }
+    .buttonHero {
+        position: sticky;/*Z-Index wants to take effect. Only on the elements of the Positive attributes (such as Relative, AbSolute, FIXED, Sticky), will it take effect.*/
+        z-index: 12;
+        display: flex;
+        margin-top: 20px;
+        width: 40%;
+        margin-left: 33.5%;
+        height: 70px;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        border: 2px solid white;
+        align-items: center;
+    }
+    .nextDiv {
         justify-content: center;
-    
-    }
-
-    .btn-mobile {
         display: block;
-        text-decoration: none;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: auto;
+        overflow: hidden;
+        background-color: #fff;
     }
-
-
-    .btn {
-        width: 100%;
+    .videoHeroSection{
+        width:auto;
+        margin-left: 56px;
+        margin-right: 56px;
+        height:auto;
+        justify-content: center;
+        text-align:center;
     }
-    
+    .play-label {
+        font-size: 36px;
+        color: white;
+    }
+    .nextUp{
+        position: relative;
+        justify-content: left;
+        padding: 136px 56px 36px 56px;
+    }
+    .nextDown{
+        font-size: 22px;
+        text-align: left;
+        z-index: 3;
+        padding: 0px 56px 136px 56px;
+    }
 }
-
-
-

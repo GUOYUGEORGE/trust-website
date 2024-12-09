@@ -1,0 +1,130 @@
+.QAContainer {
+  display: flex;
+  justify-content: center;
+  /*height: 85vh; !* 使容器占满整个视口高度 *!*/
+  padding: 122px 157px 122px 157px;
+  background-color: #2c2c2c;
+}
+
+.QAInfo {
+  flex:0.4;
+  margin-bottom: 30px;
+}
+
+.QAInfo p {
+  font-size: 16px;
+  color: white;
+  line-height: 1.6;
+}
+
+.QAActions {
+  flex:0.6;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.QAAction {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.QAAction p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.4;
+}
+
+QAButton {
+  background-color: black;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.QAButton:hover {
+  background-color: #fff;
+  color: black;
+}
+.QAAHero {
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid black;
+  align-items: center;
+}
+.QAContainerDiv {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../../public/images/3 Learn About Te Pa Whati.jpg');
+  justify-content: left;
+  overflow: hidden;
+}
+
+.maskQA{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+  color: white; /* 设置文本颜色为白色 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+}
+.QAContainerDivTop{
+  z-index: 4;
+  margin-left: 10%;
+}
+.fixed-below-QA-scrollable {
+  position:relative;
+  z-index:5;
+  /*margin-right: 50px;*/
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1px;
+  height: 30px;
+  box-sizing: border-box;
+}
+.right-QA-label{
+  padding-left: 20vh;
+  color: white;
+  font-size: 25px;
+}
+.top-div-show-dividerQA {
+  flex: 100%;
+  padding: 3px;
+  box-sizing: border-box;
+  margin-right: 50px;
+  border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .QAContainer {
+    display: block;
+    justify-content: center;
+    /*height: 85vh; !* 使容器占满整个视口高度 *!*/
+    padding: 122px 56px 122px 56px;
+    background-color: #2c2c2c;
+  }
+}
+

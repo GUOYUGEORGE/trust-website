@@ -1,48 +1,57 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Footer.css';
 import 'boxicons';
 
-function Footer() {
+const Footer = () => {
+    const [emailAddress, setEmailAddress] = useState('');
+    const handleEmailSubmit = async (e) => {
+        e.preventDefault();
+        const formData = {
+            "emailAddress":emailAddress,
+        };
+        console.log("formData",formData);
+        try {
+            const response = await fetch('http://localhost:8080/saveEmailForm', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+            // Handle success
+            alert('you already succeed save the form');
+            window.location.reload(); // 保存成功后刷新当前页面
+            console.log('Data sent successfully');
+        } catch (error) {
+            // Handle error
+            console.error('There was a problem with the request:', error);
+        }
+    };
   return (
     <div className='footer-container'>
-
         <div className='footer-section'>
-            {/* section 1 */}
-
             <div className="footer__data">
-                
-                <h2 className='footer__title'>
+                <label className='footer__title'>
                     Join the Tiaki Taonga newsletter to receive our super exciting news!
-                </h2>
+                </label>
                 <form>
-                    <input 
+                    Emails *
+                    <input
                         type='email'
                         name='email'
                         placeholder='Your Email'
-                        className='footer-input'
+                        className='footer-input' value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)}
                     />
-                    {/* <Button buttonStyle='btn--outline'>Subscribe</Button> */}
-                    <button className='button'>Subscribe</button>
+                    <button className='buttonFooter' onClick={handleEmailSubmit} >Subscribe</button>
                 </form>
 
             </div>
-
             {/* Icons section 3 */}
-            <div className="footer__data">
-                <h2 className="footer__title">Follow us!</h2>
-                <div className='footer-icons'>
-                    <a href="https://www.facebook.com/" className="footer__social">
-                        <box-icon type="logo" name="facebook" color="#fff" className="icon"></box-icon>
-                    </a>
-                    <a href="https://www.instagram.com/" className="footer__social">
-                        <box-icon type="logo" name="instagram" color="#fff"></box-icon>
-                    </a>
-                    <a href="https://www.twitter.com/" className="footer__social">
-                        <box-icon type="logo" name="twitter" color="#fff"></box-icon>
-                    </a>
-                </div>
-                <p className="footer__copyright">&#169; 2023 copyright all rights reserved</p>
-            </div>
         </div>
     </div>
   )

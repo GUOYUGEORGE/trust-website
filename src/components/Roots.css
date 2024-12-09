@@ -1,0 +1,209 @@
+
+/* CSS Variables */
+/* Colors */
+:root{
+    --white-color: #FAFAFF;
+    --green-color: #3a5a40;
+    --text-color: #697477;
+}
+
+/* Margins */
+:root{
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+}
+
+.roots-container{
+    background-color: #4E7838;
+    color: var(--white-color);
+    display: grid;
+    grid-template-columns: 0.5fr repeat(2, 1fr); /* 缩短第一个列的宽度 */
+    gap: 5px; /* Set the spacing between columns */
+    padding:45px 157px 45px 157px;
+
+}
+
+.rootsBox{
+    flex: 1;
+    padding: 2px; /* 调整上下间距 */
+}
+.rootsBox:first-child {
+    margin-left: 0; /* Remove the left margin of the first element */
+    padding-left: 5px; /* Shorten the length of the first divider */
+
+}
+.rootsBox:nth-child(2) {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.rootsBox:nth-child(3) {
+    padding-left: 5%; /* Shorten the length of the first divider */
+}
+.roots-input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.rootsGrid{
+    color: var(--white-color);
+    display: grid;
+    margin-left: 5%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px; /* Set the spacing between columns(top and bottom) */
+    column-gap: 45px; /* Increase the space between two columns (left and right)*/
+}
+
+.roots-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.roots__items{
+    list-style-type: none;
+    text-align: center;
+}
+
+.roots__link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.roots__social{
+    margin-right: 10px;
+    color: var(--white-color);
+    text-decoration: none;
+
+}
+
+.roots-icons {
+    display: flex; /* 保持图标水平排列 */
+    justify-content: flex-start; /* 左对齐图标 */
+    margin-bottom: 15px;
+}
+
+.roots__text{
+    color: var(--text-color);
+    font-weight: 700;
+    text-align: center;
+}
+
+.roots__data {
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+
+}
+.roots__data label {
+    width: 60%;
+    color: white;
+    font-size:32px;
+}
+
+.roots__data form {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roots__data input {
+    width: 255px;
+}
+
+.roots__data button {
+    width: 155px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.roots__copyright {
+    color: var(--text-color);
+    font-size:12px;
+}
+
+
+.roots-logo {
+    position: absolute;
+    font-size: 1.0rem;
+    color: #fff;
+    justify-self: start;
+    margin-left: 80px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.roots-logo > img {
+    height: 85px;
+}
+
+.roots-logo > p {
+    display: none;
+    color: black;
+}
+
+.roots__copyright {
+    color: white;
+    font-size:12px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+    .roots__data > h2 {
+      text-align: center;
+    }
+    .roots-container{
+        display: block;
+    }
+    .rootsBox:first-child {
+        margin-left: 0; /* Remove the left margin of the first element */
+        padding-left: 0; /* Shorten the length of the first divider */
+
+    }
+    .rootsBox:nth-child(3) {
+        padding-left: 0px; /* Shorten the length of the first divider */
+    }
+    .rootsbar-logo {
+        position: sticky;
+        font-size: 1.0rem;
+    }
+    .rootsBox:nth-child(2) {
+        border-top: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        border-left: 0 ;
+        border-right: 0;
+        padding-left: 0px; /* Shorten the length of the first divider */
+    }
+    .rootsGrid{
+        color: var(--white-color);
+        display: block;
+        /*margin-left: 15%;*/
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .labelRoots{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer__social{
+        margin-right: 50px;
+        color: var(--white-color);
+        text-decoration: none;
+    }
+    .footer__copyright {
+        color: white;
+        font-size:12px;
+    }
+    .roots-container{
+        padding:77px 56px 77px 56px;
+    }
+}
+

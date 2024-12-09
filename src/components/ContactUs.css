@@ -4,32 +4,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 100px;
-    background-color: rgb(230, 230, 230);
-    color: #3a5a40;
+    background-color: #74A541;
+    color: white;
+    padding:122px 157px 122px 157px;
 }
-
 .form-box{
-    max-width: 850px;
+    /*max-width: 1050px;*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
-
+.right-contactUs-container{
+    flex-direction: column;
+    margin-right: 15%;
+}
 .contact-form-title{
     font-size: 30px;
     padding-bottom: 35px;
 }
 
 .right-container-title{
-    font-size: 55px;
+    font-size: 35px;
     margin-bottom: 35px;
+    /*color:#C55636;*/
+    color:white;
 }
 
 .right-container-para{
-    width: 70%;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 input, textarea{
@@ -50,10 +53,20 @@ label{
 .message-area{
     resize: none;
 }
+.input-email::placeholder {
+    font-size: 16px;
+}
+.message-area::placeholder {
+    font-size: 16px;
+}
+.input-name::placeholder {
+    font-size: 16px;
+}
 
 .form-submit-btn{
-    font-size: 20px;
-    padding: 10px;
+    font-size: 16px;
+    margin-left: 0;
+    width: 100%;
     background-color: #3a5a40;
     border: 1px solid white;
     color: #f1f1f1;
@@ -77,4 +90,23 @@ span{
 
 .form-data .form-address{
     font-weight: 500;
+}
+@media screen and (max-width: 960px) {
+    .contact-form-container{
+        padding:122px 56px 122px 56px;
+    }
+    .form-box{
+        display: block;
+    }
+    .right-container-title{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    .right-container-para{
+        font-size: 20px;
+    }
+    .left-container{
+        padding-top: 20px;
+    }
+
 }

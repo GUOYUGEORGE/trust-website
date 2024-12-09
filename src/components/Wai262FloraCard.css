@@ -1,0 +1,795 @@
+.trust-container{
+
+}
+.top-div-show-divider-wai {
+    flex: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+}
+.text-with-dot {
+    position: relative; /* 设置为相对定位，伪元素将基于此定位 */
+    padding-left: 20px; /* 提供足够的空间放置圆点 */
+}
+
+.text-with-dot::before {
+    content: '•'; /* 使用圆点符号 */
+    position: absolute; /* 绝对定位，相对于其最近的相对定位的父元素 */
+    left: 0; /* 放置到文本块的最左边 */
+    top: 50%; /* 垂直居中 */
+    transform: translateY(-50%); /* 精确居中 */
+    font-size: 20px; /* 可以调整圆点大小 */
+    color: #000; /* 圆点颜色 */
+}
+
+.right-left{
+    display: flex;
+    box-sizing: border-box;
+}
+.imgMurraySecond-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/murray_s Second Coloured Portrait.jpg');
+    justify-content: center;
+}
+.imgHippoliteSecond-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/hippolite with other people on an outdoors setiting.jpg');
+    justify-content: center;
+}
+.imgWitiMcMath-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Te Witi McMath Joined By Others In A Greenery.jpg');
+    justify-content: center;
+}
+.imgWitiMcMath2-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/2 Te Witi McMath Joined By Others In A Greenery.jpg');
+    justify-content: center;
+}
+.imgMoana-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Moana_s Portrait.jpg');
+    justify-content: center;
+}
+.imgMoanaJackson2-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Dr_Moana_Jackson_h0ag.2e16d0ba.fill-880x586.format-webp.jpg');
+    justify-content: center;
+}
+.imgHippoliteThird-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Wide Shot of Hipploite.jpg');
+    justify-content: center;
+}
+.imgMurrayThird-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/murray_s Third Coloured Portrait.jpg');
+    justify-content: center;
+}
+.imgPortrait-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Portrait of wihongi - Coloured - PREFERRED.jpg');
+    justify-content: center;
+}
+.imgHippolite-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/UPDATED Portrait of Hippolite - PREFERRED FOR USE.jpg');
+    justify-content: center;
+}
+.imgTama-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tama Poata s Portrain.jpg');
+    justify-content: center;
+}
+.imgWiti-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Te Witi McMath s Portrait.jpg');
+    justify-content: center;
+}
+.imgMoana-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/4OO9XEI_copyright_image_86420.jpg');
+    justify-content: center;
+}
+.imgWaitingPictures-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/waitingPictures.png');
+    justify-content: center;
+}
+.imgWaitingPicturesSmall-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/waitingPictures.png');
+    justify-content: center;
+}
+.imgMcMath-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Te Witi McMath Accompanied By Tama Poata.jpg');
+    justify-content: center;
+}
+.imgMcMathJoined-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Te Witi McMath Joined By Others During Treaty Tribes Coalition.jpg');
+    justify-content: center;
+}
+.imgTamaJoined-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tama Poata Joined By Others During A March.jpg');
+    justify-content: center;
+}
+.imgTamaJoinedByRally-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tama Poata Joined By Others During A Rally.jpg');
+    justify-content: center;
+}
+.imgTama2-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/2 Tama Poata Joined By Others During A March.jpg');
+    justify-content: center;
+}
+.imgTama2Protest-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/2 Tama Poata Joined By Others During A Day Protest.jpg');
+    justify-content: center;
+}
+.imgLandscape-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Landscape Photo within an office setting jpg.jpg');
+    justify-content: center;
+}
+.imgSaana-container {
+    flex: 100%;
+    width: 70vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Updated Portrait of Murray - PREFERRED.jpg');
+    justify-content: center;
+}
+.imgMurrayJoined-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size:  100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/murray joined by other individuals in a group photo.jpg');
+    justify-content: center;
+}
+.imgMurrayAttending-container {
+    flex: 100%;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Murray attending an event with other people.jpg');
+    justify-content: center;
+}
+.imgWai262-container {
+    margin-top: -90px;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/duskfall-crew-vIQfQjrovW8-unsplash.jpg');
+    justify-content: center;
+}
+.divimg-container{
+    position: relative;
+    width: 95%;
+    height: 36vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Saana Waitta-Murray.jpg');
+    justify-content: center;
+}
+.divimg10-container{
+    position: relative;
+    width: 50vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/kate-branch-JMTJVOh1RxE-unsplash.jpg');
+    justify-content: center;
+}
+.divimg9-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/bryn-parish-IDXsYT5xVEE-unsplash.jpg');
+    justify-content: center;
+}
+.divimg8-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/fence-painted-maori-style-1225405.jpg');
+    justify-content: center;
+}
+.divimg7-container{
+    position: relative;
+    width: 80vh;
+    height: 50vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/maori-carving-2-1423369.jpg');
+    justify-content: center;
+}
+.divimg6-container{
+    position: relative;
+    width: 95%;
+    height: 36vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/maori-pattern-1189098.jpg');
+    justify-content: center;
+}
+.divimg1-container{
+    position: relative;
+    width: 95%;
+    height: 36vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tamaki Witana.jpg');
+    justify-content: center;
+}
+.divimg2-container{
+    position: relative;
+    width: 95%;
+    height: 36vh;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/John Hippolite.jpg');
+    justify-content: center;
+}
+.divimg3-container{
+    position: relative;
+    width: 95%;
+    overflow: hidden;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Witi McMath.jpg');
+    justify-content: center;
+}
+.divimg4-container{
+    position: relative;
+    width: 95%;
+    overflow: hidden;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tama Poata.jpg');
+    justify-content: center;
+}
+.divimg5-container{
+    position: relative;
+    width: 80vh;
+    overflow: hidden;
+    height: 50vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/maori-flax-3-1515872.jpg');
+    justify-content: center;
+}
+.imgProfile-container{
+    position: relative;
+    width: 95%;
+    overflow: hidden;
+    height: 60vh;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-image: url('../../public/images/1. Kumara.jpg');*/
+    justify-content: center;
+}
+.textWai-container{
+    margin: 140px 50px 20px 50px;
+    font-size: 27px;
+    color: white;
+}
+.h1-container{
+    margin: 180px 50px 20px 50px;
+    font-size: 27px;
+    color: white;
+}
+.textWaiDown-container{
+    margin: 0px 50px 0px 50px;
+    width: 36%;
+    font-size: 36px;
+    flex-wrap: wrap;
+    color: white;
+}
+.wai-labelTile-container{
+    font-size: 36px;
+    color: black;
+}
+.wai-labelText-container{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.wai-labelText-container1{
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    font-size: 16px;
+}
+.right-label{
+    float: right;
+}
+.right-label-Wai{
+    float: right;
+    position: relative;
+}
+.right-Pou-label{
+    margin-left: 5px;
+    float: right;
+}
+.contentWai{
+    font-size: 16px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.triangleTrust {
+    width: 100%;
+    height: 100%;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid black; /* Color and size can be adjusted as needed */
+    position: relative;
+    top: 0px; /* Adjust the value here so that the subscript is positioned appropriately */
+    display: inline-block;
+    vertical-align: middle;
+}
+.triangleWai {
+    position: absolute;
+    left: -20px; /* 调整左移的距离，可以根据需要进行调整 */
+    top: 50%; /* 将三角形垂直居中 */
+    transform: translateY(-33%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px; /* 设置三角形的大小和形状 */
+    border-color: transparent transparent transparent black; /* 设置三角形的颜色 */
+}
+.wai-content-wrapper {
+    margin-top: 20px; /* Make sure the content below is not obscured by the fixed div */
+    display: flex;
+}
+
+.fixed-left {
+    flex: 22%; /* Fixed width of div on the left  */
+    margin-top: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #d0d0d0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.wai-right-container{
+    flex: 78%; /* Fixed width of div on the right */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.scrollable-right {
+    margin-top: 1em;
+    flex-grow: 1; /* The scrollable div on the right occupies the remaining width */
+    /*background-color: #d0d0d0;*/
+    margin-right: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.fixed-below-Pou-scrollable {
+    position:relative;
+    z-index:1;
+    margin-right: 50px;
+    margin-top: 2em;
+    margin-bottom: 1px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.content{
+    margin-top: 1em;
+    font-size: 16px;
+    color:gray;
+    height: 33vh;
+}
+.contentBlack{
+    margin-top: 1em;
+    font-size: 16px;
+    color:black;
+    height: 100%;
+}
+.wai-content1{
+    font-size: 12px;
+    color:rgba(0, 0, 0, 0.6);
+    height: auto;
+}
+.h4{
+    color:rgba(0, 0, 0, 1);
+}
+.wai-labelText-container.selected {
+    width: 100%;
+    background-color: white; /* 选中项的背景颜色 */
+    color: #333; /* 选中项的文字颜色 */
+    /* 添加其他样式 */
+}
+.resource-container{
+    background-size: 100% 100%;
+    justify-content: center;
+    display: grid;
+    /*background-color: #74A64D;*/
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+.resource-right-container{
+    width: 100%;
+}
+.read-more-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #74A64D;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* ThreeColumnGrid.css */
+.grid-container {
+    display: flex;
+    justify-content: space-between; /* 水平间距相等 */
+}
+.grid2-container {
+    display: flex;
+    justify-content: inherit; /* 水平间距相等 */
+}
+.grid-itemTotal{
+     position: relative;
+ }
+.grid-item1 {
+    overflow: hidden;
+    width: 30vh;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Saana Waitta-Murray.jpg');
+    justify-content: center;
+}
+.grid-item2 {
+    width: 30vh;
+    overflow: hidden;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tamaki Witana.jpg');
+    justify-content: center;
+}
+.grid-item3 {
+    width: 30vh;
+    overflow: hidden;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/John Hippolite.jpg');
+    justify-content: center;
+}
+.grid-item4 {
+    width: 30vh;
+    overflow: hidden;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Tama Poata.jpg');
+    justify-content: center;
+}
+.grid-item5 {
+    width: 30vh;
+    overflow: hidden;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Witi McMath.jpg');
+    justify-content: center;
+}
+.grid-item6 {
+    width: 30vh;
+    overflow: hidden;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/Moana Jackson.jpg');
+    justify-content: center;
+}
+.grid-item7 {
+    width: 30vh;
+    overflow: hidden;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/null.png');
+    justify-content: center;
+}
+.item-text {
+    padding: 10px;           /* 文本周围的间隔 */
+    width: 310px;
+    text-align: left;      /* 文本居中 */
+    background: #fff;        /* 文本背景颜色，如需透明可以删除此行 */
+    font-size: 16px;
+}
+.right-label---wai{
+    display: none;
+    float: right;
+    position: relative;
+}
+.specificPage{
+    display: none;
+}
+@media(max-width: 1024px){
+    .right-label---wai{
+        display: block;
+    }
+    .wai-labelTile-container{
+        font-size: 22px;
+    }
+    .textWai-container{
+        font-size: 16px;
+    }
+    .h1-container{
+        font-size: 16px;
+    }
+    .textWaiDown-container{
+        font-size: 25px;
+        width: 100%;
+    }
+    .wai-labelText-container{
+        display: none ;
+    }
+    .wai-labelText-container1{
+        display: block ;
+    }
+    .wai-content-wrapper{
+        display: block;
+    }
+    .wai-right-container{
+        display: block;
+    }
+    .grid-container{
+        display: block;
+    }
+    .fixed-below-Pou-scrollable{
+        font-size: 12px;
+    }
+    .fixed-left{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    h1{
+        color: #74a541;
+    }
+    .specificPage{
+        display: block;
+        color:#74a541;
+    }
+    .scrollable-right{
+        margin-right: 0;
+        padding:0;
+        width:100%;
+    }
+    .grid2-container{
+        display: block;
+    }
+    .grid-item1 {
+        width: 50vh;
+        height: 50vh;
+    }
+    .grid-item2 {
+        width: 50vh;
+        height: 50vh;
+    }
+    .grid-item3 {
+        width: 50vh;
+        height: 50vh;
+    }
+    .grid-item4 {
+        width: 50vh;
+        height: 50vh;
+    }
+    .grid-item5 {
+        width: 50vh;
+        height: 50vh;
+    }
+    .grid-item6 {
+        width: 50vh;
+        height: 50vh;
+    }
+    .grid-item7 {
+        width: 50vh;
+        height: 50vh;
+    }
+}

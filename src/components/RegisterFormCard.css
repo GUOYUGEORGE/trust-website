@@ -1,0 +1,458 @@
+
+.registerInformationTitle,
+.registerInformationDiv {
+    flex-direction: column; /* 设置为纵向排列 */
+}
+
+.registerInformationTitle {
+    margin-bottom: 20px; /* 标题与内容之间的间距 */
+    color: #74a64D;
+    font-size: 40px;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.registerInformationDiv {
+    margin-top: -90px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* 将位置设置为相对 */
+    color: #3a5a40;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../public/images/andy-bridge-ZwN8fS_slIY-unsplash.jpg');
+    z-index: 0; /* 设置 z-index 为更低的值 */
+}
+.registerMask {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;/* this is same with  tShirtBackGroundDiv css`s height */
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.overlayRegister {
+    position: absolute;
+    top: 20%;
+    left: 7.5%;
+    width: 85%;
+    height: 78%;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    border: 2px solid white;
+    border-radius: 40px;
+    flex-direction: column;
+}
+.indicator {
+    position: absolute;
+    bottom: 10px; /* 距离底部的距离 */
+    left: 50%; /* 水平居中 */
+    transform: translateX(-50%); /* 水平居中 */
+}
+
+.indicator span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* 使圆形 */
+    background-color: #000;
+    margin: 0 5px; /* 圆点之间的间距 */
+    cursor: pointer;
+}
+.registerTitle2{
+    color: #69a662;
+}
+.registerDiv2 {
+    margin-left: 3%;
+    flex-direction: column; /* 设置为纵向排列 */
+    width: 100%;
+    margin-bottom: 20px; /* 内容之间的间距 */
+}
+.registerDiv3 {
+    display: none;
+    margin-left: 3%;
+    flex-direction: column; /* 设置为纵向排列 */
+    width: 100%;
+    margin-bottom: 20px; /* 内容之间的间距 */
+}
+.registerDiv4 {
+    display: block;
+    margin-left: 3%;
+    flex-direction: column; /* 设置为纵向排列 */
+    width: 100%;
+    margin-bottom: 20px; /* 内容之间的间距 */
+}
+.registerCss1 {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    height: 80px;
+}
+.registerLeftCss {
+    flex: 0.5;
+    /*text-align: right;*/
+}
+.registerY {
+    display: flex;
+}
+.registerRightCssNew {
+    flex: 0.5;
+    margin-left: 2%;
+    /*text-align: right;*/
+}
+.registerCss{
+    display: flex;
+    width: 100%;
+}
+.confirmReturnDiv{
+    margin-top: 20%;
+    display: block;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.registerLeftCss1 {
+    width: 90%;
+}
+.registerLeftCss4 {
+    width: 90%;
+}
+.registerLeftCss2 {
+    width: auto;
+    height: auto; /* 自动高度 */
+}
+.registerLeftCss3 {
+    width: 90%;
+}
+.registerRightCss{
+    flex: 0.5;
+    text-align: center;
+    margin-left: 10%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.registerRightCss1{
+    flex: 0.5;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: -1%;
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.registerRightCss2{
+    flex: 1;
+    text-align: center;
+    margin-left: 2%;
+    margin-top: -1%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.requestClass2 {
+    width: 100%; /* 下拉框的宽度 */
+    padding: 10px; /* 下拉框的内边距 */
+    font-size: 16px; /* 下拉框的字体大小 */
+    border: 1px solid #ccc; /* 下拉框的边框样式 */
+    border-radius: 5px; /* 下拉框的边框圆角 */
+    background-color: #fff; /* 下拉框的背景色 */
+    /*appearance: none; !* 隐藏默认的下拉箭头 *!*/
+    cursor: pointer; /* 设置鼠标指针样式为指针 */
+}
+.requestInformation-form-submit-btn{
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #74a64D;
+    border: 1px solid white;
+    color: #f1f1f1;
+    width: 100%;
+    /*font-weight: 500;*/
+    cursor: pointer;
+}
+
+.requestInformation-form-submit-btn:hover{
+    color: #3a5a40;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+.checkboxCss{
+    width: 10%;
+    display: inline-block;
+}
+.checkboxLabel{
+    display: inline-block; /* 将 label 设置为块级元素 */
+    font-size: 10px;
+    white-space: nowrap; /* 防止文本换行 */
+}
+.checkboxRightLabel{
+    margin-left: 50%;
+    display: inline-block; /* 将 label 设置为块级元素 */
+    font-size: 10px;
+    white-space: nowrap; /* 防止文本换行 */
+}
+
+
+.requestDiv {
+    width: 100%;
+    background-size: 100% 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin-left: -8%;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+}
+
+.requestNextUp{
+    width: 120%;  /* 填充整个宽度 */
+    position: relative;
+    margin-left: 15%;
+    padding-top: 12%;
+    margin-right: 0;
+
+}
+.requestNextDown{
+    width: 80%;  /* 填充整个宽度 */
+    margin-left: 15%;
+    position: relative;
+    text-align: left;
+    padding-top: 12%;
+}
+
+.registerLeftCss input[type="radio"] {
+    width: 20px; /* 设置单选框宽度 */
+    height: 20px; /* 设置单选框高度 */
+}
+.registerRightCssNew input[type="radio"] {
+    width: 20px; /* 设置单选框宽度 */
+    height: 20px; /* 设置单选框高度 */
+}
+.registerInputClass{
+    display: inline-block;
+    width:20%;
+    height: 10px;
+}
+.registerInputClass2{
+    margin-left: 5%;
+    width:100%;
+    height: 30px;
+}
+.registerInputClass3{
+    height: 30px;
+}
+.registerInputClass4{
+    width:33%;
+    height: 30px;
+}
+.registerInputRightClass{
+    margin-left: 5%;
+    display: inline-block;
+    width:20%;
+}
+.radioLabel{
+    height: 50px;
+}
+.registerLabel{
+    color: #69a662;
+}
+
+.registerDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    justify-content: left;
+    margin-left: 10%;
+}
+.registerDiv1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    justify-content: left;
+    margin-left: -2.5%;
+}
+
+
+.registerUp{
+    margin-left: 5%;
+}
+.registerDown{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.registerClass2 {
+    width: 90%; /* 下拉框的宽度 */
+    padding: 10px; /* 下拉框的内边距 */
+    border: 1px solid #ccc; /* 下拉框的边框样式 */
+    border-radius: 5px; /* 下拉框的边框圆角 */
+    background-color: #fff; /* 下拉框的背景色 */
+    cursor: pointer; /* 设置鼠标指针样式为指针 */
+}
+.fileInputCss{
+    width: 40%;
+}
+
+
+.registerForRadio {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 垂直居中 */
+    flex-wrap: nowrap; /* 禁止换行 */
+}
+
+.radioContainer {
+    margin-right: 5px;
+}
+.registerInputRightClass1 {
+    margin-right: 5px; /* 可以根据需要调整间距 */
+}
+.radioLabel1 {
+    margin-right: 0px; /* 可以根据需要调整间距 */
+}
+.registerInformation-form-submit-btn1{
+    font-size: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #74a64D;
+    border: 1px solid white;
+    color: #f1f1f1;
+    width: 90%;
+    /*font-weight: 500;*/
+    cursor: pointer;
+}
+.custom-radio-group .ant-radio-wrapper {
+    display: flex;
+    flex-direction: column; /* 纵向排列 */
+    align-items: center;
+}
+
+.custom-radio-group .ant-radio {
+    margin-right: 8px; /* 控制单选框与标签的间距 */
+}
+.registerD {
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    align-items: flex-start;
+}
+.registerK {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.labelRightContainer {
+    /* 添加你需要的样式 */
+    display: flex;
+    align-items: center;
+}
+.labelRight {
+    margin-left: auto;
+    font-size: 12px;
+    line-height: 20px;
+    color: red;
+}
+.labelRightNormal {
+    margin-left: auto;
+    font-size: 12px;
+    color: red;
+}
+.labelRightNormalRight {
+    float: right;
+    font-size: 12px;
+    color: red;
+}
+.registerRightCss1{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+}
+.confirmationReturnDiv {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 60%;
+    height: 60vh;
+    background-color: white;
+    z-index: 3;
+    display: block;
+    border: 2px solid black;
+    align-items: center;
+    border-radius: 40px;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+}
+@media screen and (max-width: 960px) {
+    .registerInformationTitle{
+        font-size: 22px;
+    }
+    .labelRightNormal {
+        font-size: 10px;
+    }
+    .labelRight {
+        font-size: 10px;
+    }
+    .radioLabel{
+        font-size: 10px;
+    }
+    .labelLeft{
+        font-size: 10px;
+    }
+    .registerCss{
+        display: block;
+    }
+    .indicator{
+        display: none;
+    }
+    .overlayRegister{
+        height: auto;
+    }
+    .registerMask{
+        height: 110vh;
+    }
+    .registerInformationDiv{
+        height: 110vh;
+    }
+    .registerDiv3{
+        display: block;
+    }
+    .confirmationReturnDiv {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        width: 100%;
+        height: 55vh;
+        background-color: white;
+        z-index: 3;
+        display: block;
+        border: 2px solid black;
+        border-radius: 40px;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+    }
+}
+
